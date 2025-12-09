@@ -41,6 +41,14 @@ export default function Navbar() {
               Home
             </Link>
             <Link 
+              href="/privacy-policy" 
+              className={`font-medium transition-colors duration-300 hover:text-[#c9a962] ${
+                scrolled ? 'text-[#1a365d]' : 'text-white'
+              }`}
+            >
+              Privacy Policy
+            </Link>
+            <Link 
               href="/contacts" 
               className={`font-medium transition-colors duration-300 hover:text-[#c9a962] ${
                 scrolled ? 'text-[#1a365d]' : 'text-white'
@@ -82,6 +90,13 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Home
+              </Link>
+              <Link 
+                href="/privacy-policy" 
+                className={`font-medium ${scrolled ? 'text-[#1a365d]' : 'text-white'}`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Privacy Policy
               </Link>
               <Link 
                 href="/contacts" 

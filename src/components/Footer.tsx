@@ -70,9 +70,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#c9a962] transition-colors duration-300">
+                <Link href="/privacy-policy" className="text-gray-400 hover:text-[#c9a962] transition-colors duration-300">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -109,6 +109,9 @@ export default function Footer() {
             <div className="flex gap-6 text-sm">
               <Link href="/" className="text-gray-500 hover:text-[#c9a962] transition-colors duration-300">
                 Home
+              </Link>
+              <Link href="/privacy-policy" className="text-gray-500 hover:text-[#c9a962] transition-colors duration-300">
+                Privacy Policy
               </Link>
               <Link href="/contacts" className="text-gray-500 hover:text-[#c9a962] transition-colors duration-300">
                 Contacts
